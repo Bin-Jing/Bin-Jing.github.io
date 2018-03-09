@@ -1,0 +1,147 @@
+
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>Bin-Jing Hsieh</title>
+                    
+                    <script src="js/jquery.min.js"></script>
+                    <script src="js/bootstrap.min.js"></script>
+                    <script src="js/handlebars-v3.0.3.js"></script>
+                    
+                    <script src="js/content.js"> </script>
+                    
+                    <link href="css/bootstrap.css" rel="stylesheet">
+
+                            
+    </head>
+    <body>
+        
+        <div class="container">
+ 
+            <div class="page-header">
+                <h1>Bin-Jing Hsieh の WebPage</h1>
+            </div>
+
+            <ul class="nav nav-tabs">
+                <li role="" class="active"><a href="#" id="About-tab" >About Me</a></li>
+                <li role=""><a href="#" id="photos-tab" >Photos</a></li>
+                <li role=""><a href="#" id="Games-tab" >My Games</a></li>
+            </ul>
+            <br/><br/>
+            
+
+            <div id="content"  class="container-fluid"  role="main">
+            </div>
+        </div>
+        <script id="about-template" type="text/x-handlebars-template">
+            <div class="row">
+            <h4> About Me </h4>
+            <ul>
+                <li>My name: 謝秉瑾</li>
+                <li>School:
+                    <a
+                    href="http://www.nccu.edu.tw">
+                    Nccu
+                    </a>
+                </li>
+                <li>
+                    <a
+                    href="https://github.com/Bin-Jing">
+                        My Github
+                    </a>
+                </li>
+            </ul>
+            
+            </script>
+        
+
+        <script id="photos-template" type="text/x-handlebars-template">
+            <div class="row">
+            <div class="col-md-6">
+            
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            
+            <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="10"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="11"></li>
+            </ol>
+            
+            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+            
+            {{#each photos}}
+            <div class="item {{#if @first}}active{{/if}}">
+            <img class="carousel-img" src="{{src}}" alt=""/>
+            
+            </div> <!-- / carousel item -->
+            {{/each}}
+            
+            </div>
+            
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+            </div>
+            
+            </div> <!-- / carousel --> 
+            </div> <!-- / col -->
+            </div> <!-- / row -->
+ 
+            
+            
+            </script>
+
+
+        
+        <script id="games-template" type="text/x-handlebars-template">
+            <h4> Games </h4>
+                <li>My first 2D Game:
+                    <a
+                    href="https://bjhsiehweb.updog.co/SuperArmy%20on%20Web/index.html">
+                    SuperArmy
+                    </a>
+                </li>
+                <li>My first 3D Game:
+                    <a
+                    href="https://bjhsiehweb.updog.co/SuperCannonOnWeb/index.html">
+                    SuperCannon
+                    </a>
+                </li>
+                <li>Cannon Game:
+                    <a
+                    href="https://bjhsiehweb.updog.co/CannonOnWeb/index.html">
+                    Cannon
+                    </a>
+                </li>
+                <li>BeautifulView:
+                    <a
+                    href="https://bjhsiehweb.updog.co/view/index.html">
+                    View
+                    </a>
+                </li>
+            </script>
+        
+        
+        
+    </body>
+</html>
