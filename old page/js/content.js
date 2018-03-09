@@ -85,7 +85,7 @@ $(document).ready(function(){
 	$("#photos-tab").click(function () {
 		
         showTemplate(photos_template, current_album);
-        //$('#content').html(photos_template);
+        $('#content').html(photos_template);
 
 		$(".nav-tabs .active").removeClass("active");
 

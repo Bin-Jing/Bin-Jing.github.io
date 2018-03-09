@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  
+  <link rel="stylesheet" href="css/lightgallery.css">
 
   
-  <title>Archiv | Bin-JingのWebPage</title>
+  <title>Bin-JingのWebPage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="None">
 <meta property="og:type" content="website">
@@ -17,6 +17,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bin-JingのWebPage">
 <meta name="twitter:description" content="None">
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars-v3.0.3.js"></script>
+                    
+    <script src="js/content.js"> </script>
+                    
+    <link href="css/bootstrap.css" rel="stylesheet">
   
     <link rel="alternate" href="/atom.xml" title="Bin-JingのWebPage" type="application/atom+xml">
   
@@ -30,7 +38,13 @@
 </head>
 
 <body>
+    <script src="js/lightgallery.min.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
   <div id="container">
+      
     <div id="wrap">
       <header id="header">
   <div id="banner"></div>
@@ -41,7 +55,7 @@
       </h1>
       
         <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">nothing</a>
+          <a href="/" id="subtitle">Albums</a>
         </h2>
       
     </div>
@@ -67,13 +81,54 @@
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://bin-jing.github.io"></form>
       </div>
+    
     </div>
   </div>
 </header>
       <div class="outer">
         <section id="main">
-  
-  
+            
+            <a>My pets</a>
+            
+            <div id="lightgallery">
+                <a href="images/img_1.JPG">
+                    <img src="images/img_1_s.png">
+                </a>
+                <a href="images/img_2.JPG">
+                    <img src="images/img_2_s.png">
+                </a>
+                <a href="images/img_3.JPG">
+                    <img src="images/img_3_s.png">
+                </a>
+                <a href="images/img_4.JPG">
+                    <img src="images/img_4_s.png">
+                </a>
+                <a href="images/img_5.JPG">
+                    <img src="images/img_5_s.png">
+                </a>
+                <a href="images/img_6.JPG">
+                    <img src="images/img_6_s.png">
+                </a>
+                <a href="images/img_7.JPG">
+                    <img src="images/img_7_s.png">
+                </a>
+                <a href="images/img_8.JPG">
+                    <img src="images/img_8_s.png">
+                </a>
+                <a href="images/img_9.JPG">
+                    <img src="images/img_9_s.png">
+                </a>
+                <a href="images/img_10.JPG">
+                    <img src="images/img_10_s.png">
+                </a>
+                <a href="images/img_11.JPG">
+                    <img src="images/img_11_s.png">
+                </a>
+                <a href="images/img_12.JPG">
+                    <img src="images/img_12_s.png">
+                </a>
+            </div>
+        
     
     
       
@@ -162,5 +217,8 @@
 
 
   </div>
+    <script>
+    lightGallery(document.getElementById('lightgallery'));
+    </script>
 </body>
 </html>
