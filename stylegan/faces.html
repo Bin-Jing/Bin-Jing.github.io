@@ -1,0 +1,45 @@
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+
+var theImages = new Array() // do not change this
+
+
+var path = "results/";
+for (var i = 0; i < 1000; i++) { 
+    theImages[i] = path+"example-"+i.toString()+".png";
+//    console.log(path+"example-"+i.toString()+".png")
+ }
+
+// do not edit anything below this line
+
+var j = 0;
+var p = theImages.length;
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+   preBuffer[i] = new Image()
+   preBuffer[i].src = theImages[i]
+}
+var whichImage = Math.round(Math.random()*(p-1));
+function showImage(){
+document.write('<img src="'+theImages[whichImage]+'">');
+}
+
+//  End -->
+</script>
+
+<center>
+<h1>Style-based GAN</h1>
+
+
+<BODY>
+    
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+showImage();
+//  End -->
+</script>
+<div>
+    <a href="javascript:window.location.reload(true)" class="continue">refresh</a>
+</div>
+</center>
