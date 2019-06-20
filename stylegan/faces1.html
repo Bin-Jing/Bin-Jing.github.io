@@ -1,24 +1,24 @@
 <SCRIPT LANGUAGE="JavaScript">
-//var theImages = new Array() // do not change this
+var theImages = new Array() // do not change this
 
 
 var path = "results/";
-//for (var i = 0; i < 1000; i++) { 
-//    theImages[i] = path+"example-"+i.toString()+".png";
-////    console.log(path+"example-"+i.toString()+".png")
-// }
+for (var i = 0; i < 1000; i++) { 
+    theImages[i] = path+"example-"+i.toString()+".png";
+//    console.log(path+"example-"+i.toString()+".png")
+ }
 var j = 0;
 var p = 1000;
-//var preBuffer = new Array()
-//for (i = 0; i < p; i++){
-//   preBuffer[i] = new Image()
-//   preBuffer[i].src = theImages[i]
-//}
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+   preBuffer[i] = new Image()
+   preBuffer[i].src = theImages[i]
+}
 
 function reloadIMG(){
     var whichImage = Math.round(Math.random()*(p-1));
-//    document.getElementById("MainIMG").src=theImages[whichImage];
-    document.getElementById("MainIMG").src=path+"example-"+whichImage+".png";
+    document.getElementById("MainIMG").src=theImages[whichImage];
+//    document.getElementById("MainIMG").src=path+"example-"+whichImage+".png";
     console.log("reload")
 }
 </script>
